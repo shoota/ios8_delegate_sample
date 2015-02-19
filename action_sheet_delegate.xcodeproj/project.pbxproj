@@ -14,6 +14,7 @@
 		745066AF1A9567AD00909DAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745066AE1A9567AD00909DAC /* Images.xcassets */; };
 		745066B21A9567AD00909DAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 745066B01A9567AD00909DAC /* LaunchScreen.xib */; };
 		745066BE1A9567AD00909DAC /* action_sheet_delegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745066BD1A9567AD00909DAC /* action_sheet_delegateTests.m */; };
+		745066C91A95694500909DAC /* ActionControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 745066C81A95694500909DAC /* ActionControllerDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		745066B71A9567AD00909DAC /* action_sheet_delegateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = action_sheet_delegateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		745066BC1A9567AD00909DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		745066BD1A9567AD00909DAC /* action_sheet_delegateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = action_sheet_delegateTests.m; sourceTree = "<group>"; };
+		745066C71A95694500909DAC /* ActionControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionControllerDelegate.h; sourceTree = "<group>"; };
+		745066C81A95694500909DAC /* ActionControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionControllerDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				745066A51A9567AD00909DAC /* AppDelegate.h */,
 				745066A61A9567AD00909DAC /* AppDelegate.m */,
+				745066C71A95694500909DAC /* ActionControllerDelegate.h */,
+				745066C81A95694500909DAC /* ActionControllerDelegate.m */,
 				745066A81A9567AD00909DAC /* ViewController.h */,
 				745066A91A9567AD00909DAC /* ViewController.m */,
 				745066AB1A9567AD00909DAC /* Main.storyboard */,
@@ -221,6 +226,7 @@
 			files = (
 				745066AA1A9567AD00909DAC /* ViewController.m in Sources */,
 				745066A71A9567AD00909DAC /* AppDelegate.m in Sources */,
+				745066C91A95694500909DAC /* ActionControllerDelegate.m in Sources */,
 				745066A41A9567AD00909DAC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

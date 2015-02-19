@@ -9,13 +9,22 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)alert:(id)sender;
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    @private
+    ActionControllerDelegate *_acd;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+ 
+    _acd = [[ActionControllerDelegate alloc] init];
+    _acd.delegate = self;
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,4 +33,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void) defaultAction {
+    NSLog(@"Tapped OK on ActionAlert");
+}
+
+
+- (IBAction)alert:(id)sender {
+    UIAlertController *ac = [_acd createSimpleAlert:@"hello" message:@"this is message!"];
+    
+    [self presentViewController:ac animated:YES completion:nil];
+    
+}
 @end

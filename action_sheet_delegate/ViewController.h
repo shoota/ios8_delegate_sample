@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ActionControllerDelegate.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <ActionControllerDelegate>
 
 
 @end
